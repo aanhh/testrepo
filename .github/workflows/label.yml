@@ -27,5 +27,5 @@ jobs:
       - name: Upload math result for uploadartifact
         uses: actions/upload-artifact@v2
         with:
-          name: ~!@#$%^&*()
+          name: math-calculate
           path: math-homework.txt        
