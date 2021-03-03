@@ -1,0 +1,91 @@
+# This workflow will triage pull requests and apply a label based on the
+# paths that are modified in the pull request.
+#
+# To use this workflow, you will need to set up a .github/labeler.yml
+# file with configuration.  For more information, see:
+# https://github.com/actions/labeler
+
+name: Labeler
+on: [pull_request]
+
+jobs:
+  label:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/labeler@v2
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+  uploadartifact1:
+    name: Create artifact and upload ~!@#$%^&*()
+    runs-on: ubuntu-latest
+    steps:
+      - shell: bash
+        run: |
+          expr 3 + 7 > math-homework.txt
+      - name: Upload math result for uploadartifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: math-calculate
+          path: math-homework.txt  
+  uploadartifact2:
+    name: A!@#$%^&*()
+    runs-on: ubuntu-latest
+    steps:
+      - shell: bash
+        run: |
+          expr 3 + 7 > math-homework.txt
+      - name: Upload math result for uploadartifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: mathexp
+          path: math-homework.txt         
+  uploadartifact3:
+    name: 構成済みの外観
+    runs-on: ubuntu-latest
+    steps:
+      - shell: bash
+        run: |
+          expr 3 + 7 > math-homework.txt
+      - name: Upload math result for uploadartifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: math1
+          path: math-homework.txt          
+  uploadartifact4:
+    name: )#KAWOE
+    runs-on: ubuntu-latest
+    steps:
+      - shell: bash
+        run: |
+          expr 3 + 7 > math-homework.txt
+      - name: Upload math result for uploadartifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: math2
+          path: math-homework.txt           
+  uploadartifact5:
+    name: K02la=10
+    runs-on: ubuntu-latest
+    steps:
+      - shell: bash
+        run: |
+          expr 3 + 7 > math-homework.txt
+      - name: Upload math result
+        uses: actions/upload-artifact@v2
+        with:
+          name: math3
+          path: math-homework.txt           
+  uploadartifact6:
+    name: =20amek
+    runs-on: ubuntu-latest
+    steps:
+      - shell: bash
+        run: |
+          expr 3 + 7 > math-homework.txt
+      - name: Upload math result
+        uses: actions/upload-artifact@v2
+        with:
+          name: math4
+          path: math-homework.txt           
